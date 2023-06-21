@@ -12,7 +12,7 @@ class MainActivity3 : AppCompatActivity() {
 
         val itemsList = findViewById<RecyclerView>(R.id.itemslist)
         val items = arrayListOf<Item>()
-
+//тут добавлять товари
         items.add(Item(1, "","Sofa", "Диван","lorem",100))
         items.add(Item(2, "","Light", "Світло","lorem",100))
         items.add(Item(3, "","kitchen", "Кухня","lorem",100))
