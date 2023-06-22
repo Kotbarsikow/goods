@@ -37,5 +37,15 @@ class ItemsAdapter(var items: List<Item>, var context:Context) :RecyclerView.Ada
         )
 
         holder.image.setImageResource(imageid)
+    //показ товарів на детальніше. 
+        holder.button_buy.setOnClickListener{
+            val intent = Intent(context, MainActivity4::class.java)
+
+            intent.putExtra("itemPrice", items[position].price.toString() + "$")
+            intent.putExtra("itemTitle", items[position].title)
+            intent.putExtra("itemText", items[position].text)
+
+            context.startActivity(intent)
+        }
     }
 }
