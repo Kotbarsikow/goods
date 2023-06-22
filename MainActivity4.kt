@@ -1,5 +1,5 @@
 package com.example.stanapp
-
+//код сторінки для детального показу товарів
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
